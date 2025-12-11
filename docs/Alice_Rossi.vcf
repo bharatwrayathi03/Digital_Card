@@ -1,14 +1,15 @@
 BEGIN:VCARD
-    VERSION:3.0
-    FN:Alice Rossi
-    ORG:Euroimpianti Group srl
-    TITLE:HR Manager
-    TEL;TYPE=WORK,VOICE:393331133445
-    TEL;TYPE=HOME,VOICE:20334477
-    EMAIL:alice.rossi@example.com
-    EMAIL;TYPE=WORK,INTERNET:alice.rossi@pec.example.com
-    ADR;TYPE=WORK:;;Via Firenze 33;Florence;;50100;Italy
-    URL:http://www.euroimpiantigroup.net
-    NOTE:Partita IVA / SDI: IT32345678903 - KLMNO789
-    END:VCARD
+VERSION:3.0
+FN:Alice Rossi
+ORG:Euroimpianti Group srl
+TITLE:HR Manager
+TEL;TYPE=WORK,VOICE:393331133445
+TEL;TYPE=HOME,VOICE:20334477
+EMAIL:alice.rossi@example.com
+EMAIL;TYPE=WORK,INTERNET:alice.rossi@pec.example.com
+ADR;TYPE=WORK:;;Via Firenze 33;Florence;;50100;Italy
+URL:http://www.euroimpiantigroup.net
+NOTE:Partita IVA / SDI: IT32345678903 - KLMNO789
+END:VCARD
+
     
