@@ -1,13 +1,13 @@
 BEGIN:VCARD
-    VERSION:3.0
-    FN:Jane Smith
-    ORG:Euroimpianti Group srl
-    TITLE:Designer
-    TEL;TYPE=WORK,VOICE:393331122334
-    TEL;TYPE=HOME,VOICE:20334466
-    EMAIL:jane.smith@example.com
-    EMAIL;TYPE=WORK,INTERNET:jane.smith@pec.example.com
-    ADR;TYPE=WORK:;;Via Milano 22;Rome;;100;Italy
-    URL:http://www.euroimpiantigroup.net
-    NOTE:Partita IVA / SDI: IT22345678902 - FGHIJ456
-    END:VCARD
+VERSION:3.0
+FN:Jane Smith
+ORG:Euroimpianti Group srl
+TITLE:Designer
+TEL;TYPE=WORK,VOICE:393331122334
+TEL;TYPE=HOME,VOICE:20334466
+EMAIL:jane.smith@example.com
+EMAIL;TYPE=WORK,INTERNET:jane.smith@pec.example.com
+ADR;TYPE=WORK:;;Via Milano 22;Rome;;100;Italy
+URL:http://www.euroimpiantigroup.net
+NOTE:Partita IVA / SDI: IT22345678902 - FGHIJ456
+END:VCARD
