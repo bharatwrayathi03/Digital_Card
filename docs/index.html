@@ -4,21 +4,37 @@
 <meta charset="UTF-8">
 <title>Team Digital Cards</title>
 <style>
-body { font-family:sans-serif; background:#0b0b0b; color:#fff; padding:50px; }
+body { font-family:Century Gothic; background:#0b0b0b; color:#fff; padding:50px; }
 h1 { text-align:center; color:#ffd200; }
 ul { list-style:none; padding:0; }
 li { margin:20px 0; font-size:24px; }
 a { color:#eaeaea; text-decoration:none; }
 a:hover { color:#ffd200; }
+button { font-size:18px; padding:10px; background:#ffd200; color:#000; border:none; border-radius:5px; cursor:pointer; }
 </style>
 </head>
 <body>
 <h1>Team Digital Cards</h1>
+<button id="showReport">Show Report</button>
+<div id="report" style="margin-top:20px;"></div>
 <ul>
 <li><a href="John_Doe.html">John Doe</a></li>
 <li><a href="Jane_Smith.html">Jane Smith</a></li>
 <li><a href="Alice_Rossi.html">Alice Rossi</a></li>
 <li><a href="Bob_Bianchi.html">Bob Bianchi</a></li>
 </ul>
+
+<script>
+document.getElementById('showReport').onclick = async function() {
+    const res = await fetch('https://www.euroimpiantigroup.it/tracking/stats.php');
+    const data = await res.json();
+    document.getElementById('report').innerHTML = `
+        <p>Visits: ${data.visits}</p>
+        <p>QR Scans: ${data.qr_scans}</p>
+        <p>VCF Downloads: ${data.downloads_vcf}</p>
+        <p>CV Downloads: ${data.downloads_cv}</p>
+    `;
+};
+</script>
 </body>
 </html>
