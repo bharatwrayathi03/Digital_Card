@@ -24,17 +24,8 @@
     .qr img { width:350px; box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4); border-radius:15px; }
 </style>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYHM71FF50"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EYHM71FF50');
-</script>
-
 </head>
-<body onload="gtag('event', 'visit_or_qr_scan', {'employee':'John Doe'})">
+<body onload="fetch('http://mycards.gamer.gd/tracking/stats.php?type=visit')">
 <div class="card">
     <div class="logo"><img src="logo.png"></div>
     <div class="photo-name">
@@ -90,10 +81,14 @@
         </div>
     </div>
 
-    <div class="qr"><img src="John_Doe_qr.png"></div>
+    <div class="qr">
+        <img src="John_Doe_qr.png" onclick="fetch('http://mycards.gamer.gd/tracking/stats.php?type=qr')">
+    </div>
 
-    <a class="btn" href="John_Doe.vcf" download onclick="gtag('event','download_vcf',{'employee':'John Doe'})">📲 Salva Contatto</a>
-    <a class="btn" href="file_69135a380ce62.pdf" download onclick="gtag('event','download_cv',{'employee':'John Doe'})">📄 Scarica Profilo Aziendale</a>
+    <a class="btn" href="John_Doe.vcf" download 
+       onclick="fetch('http://mycards.gamer.gd/tracking/stats.php?type=download_vcf')">📲 Salva Contatto</a>
+    <a class="btn" href="file_69135a380ce62.pdf" download 
+       onclick="fetch('http://mycards.gamer.gd/tracking/stats.php?type=download_cv')">📄 Scarica Profilo Aziendale</a>
 </div>
 </body>
 </html>
