@@ -26,7 +26,7 @@ button { padding:15px 25px; font-size:20px; border:none; border-radius:10px; cur
 </ul>
 <script>
 document.getElementById("reportBtn").addEventListener("click", () => {
-    fetch("http://mycards.gamer.gd/tracking/stats.php")
+    fetch("https://mycards.gamer.gd/tracking/stats.php")
         .then(res => res.json())
         .then(stats => {
             document.getElementById("reportBox").style.display = "block";
