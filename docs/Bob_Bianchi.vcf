@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Bob Bianchi
+ORG:Euroimpianti Group srl
+TITLE:Marketing
+TEL;TYPE=WORK,VOICE:393331144556
+TEL;TYPE=HOME,VOICE:20334488
+EMAIL:bob.bianchi@example.com
+EMAIL;TYPE=WORK,INTERNET:bob.bianchi@pec.example.com
+ADR;TYPE=WORK:;;Via Napoli 44;Naples;;80100;Italy
+URL:http://www.euroimpiantigroup.net
+NOTE:Partita IVA / SDI: IT42345678904 - PQRST012
+END:VCARD
