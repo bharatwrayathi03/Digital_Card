@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Alice Rossi - Digital Card</title>
+<style>
+    body { 
+        font-family: 'Century Gothic'; 
+        background:#0b0b0b; 
+        margin:0; 
+        padding:4vw 5vw; 
+        color:#fff; 
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+    
+    .card { 
+        background:#1a1a1a; 
+        max-width: min(95vw, 950px); 
+        margin:auto; 
+        padding: clamp(40px, 8vw, 80px); 
+        border-radius: clamp(20px, 4vw, 28px); 
+        border:1px solid #333; 
+        box-shadow:0 0 clamp(40px, 10vw, 70px) rgba(0,0,0,0.55); 
+    }
+    
+    .logo { 
+        text-align:center; 
+        margin-bottom: clamp(40px, 10vw, 70px); 
+    }
+    
+    .logo img { 
+        width: clamp(250px, 40vw, 400px); 
+        filter:brightness(1.2); 
+    }
+    
+    h1 { 
+        font-size: clamp(32px, 8vw, 60px); 
+        text-align:center; 
+        margin:0; 
+        font-weight:bold; 
+        letter-spacing: max(1px, 0.5vw); 
+    }
+    
+    h2 { 
+        font-size: clamp(20px, 5vw, 36px); 
+        text-align:center; 
+        color:#d4d4d4; 
+        margin: clamp(15px, 4vw, 25px) 0 clamp(40px, 10vw, 70px); 
+    }
+    
+    .photo-name { 
+        text-align: center; 
+        margin-bottom: clamp(30px, 8vw, 60px); 
+    }
+    
+    .photo-name img { 
+        width: clamp(200px, 30vw, 300px); 
+        height: clamp(200px, 30vw, 300px); 
+        border-radius: 50%; 
+        object-fit: cover; 
+        box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); 
+    }
+    
+    .section { 
+        margin-top: clamp(30px, 6vw, 50px); 
+        padding: clamp(20px, 5vw, 40px) clamp(25px, 6vw, 50px); 
+        border-radius: clamp(12px, 3vw, 20px); 
+        background: #2a2a2a; 
+        box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3); 
+        transform: translateY(-5px); 
+    }
+    
+    .section-title { 
+        font-size: clamp(24px, 6vw, 44px); 
+        font-weight:bold; 
+        margin-bottom: clamp(15px, 4vw, 30px); 
+        border-left: clamp(4px, 1vw, 8px) solid #ffd200; 
+        padding-left: clamp(10px, 2.5vw, 20px); 
+        color:#ffd200; 
+    }
+    
+    .info-block { 
+        font-size: clamp(18px, 4.5vw, 38px); 
+        line-height: clamp(28px, 6vw, 50px); 
+        color:#e6e6e6; 
+    }
+    
+    .two-column { 
+        display:flex; 
+        justify-content:space-between; 
+        gap: clamp(20px, 8vw, 50px); 
+        flex-wrap:wrap; 
+    }
+    
+    a { 
+        color:#eaeaea; 
+        text-decoration:none; 
+    }
+    
+    .btn { 
+        display:block; 
+        margin-top: clamp(40px, 10vw, 70px); 
+        text-align:center; 
+        font-size: clamp(20px, 5vw, 40px); 
+        padding: clamp(15px, 4vw, 25px) clamp(30px, 8vw, 50px); 
+        background:#000; 
+        border-radius: clamp(12px, 3vw, 18px); 
+        border:2px solid #555; 
+        color:white; 
+        box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4); 
+        transition: transform 0.3s, box-shadow 0.3s; 
+    }
+    
+    .btn:hover { 
+        transform: translateY(-3px); 
+        box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6); 
+    }
+    
+    .qr { 
+        text-align:center; 
+        margin-top: clamp(40px, 10vw, 70px); 
+    }
+    
+    .qr img { 
+        width: clamp(200px, 35vw, 350px); 
+        box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4); 
+        border-radius: clamp(10px, 2vw, 15px); 
+    }
+
+    @media (max-width: 768px) {
+        body { padding: 3vw 4vw; }
+        .card { padding: 6vw; }
+        .two-column { flex-direction: column; gap: 4vw; }
+        .section { padding: 4vw 5vw; margin-top: 4vw; }
+    }
+</style>
+
+
+
+</head>
+<body onload="fetch('https://www.euroimpiantigroup.it/tracking/stats.php?type=visit')">
+<div class="card">
+    <div class="logo"><img src="logo.png"></div>
+    <div class="photo-name">
+        <img src="Alice_Rossi.png" alt="Photo">
+        <h1>Alice Rossi</h1>
+        <h2>HR Manager — Euroimpianti Group srl</h2>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Contatti</div>
+        <div class="info-block">
+            📱 <a href="tel:393331133445">393331133445</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            ☎️ <a href="tel:20334477">20334477</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Email</div>
+        <div class="info-block">
+            ✉️ <a href="mailto:alice.rossi@example.com">alice.rossi@example.com</a><br>
+            📨 <a href="mailto:alice.rossi@pec.example.com">alice.rossi@pec.example.com</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Indirizzo</div>
+        <div class="info-block">
+            📍 <a href="https://www.google.com/maps/search/Via Firenze 33, Florence, 50100, Italy" target="_blank">
+                Via Firenze 33, Florence, 50100, Italy
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Sito Web</div>
+        <div class="info-block">
+            🌐 <a href="http://www.euroimpiantigroup.net" target="_blank">http://www.euroimpiantigroup.net</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">LinkedIn</div>
+        <div class="info-block">
+            🔗 <a href="https://it.linkedin.com/" target="_blank">https://it.linkedin.com/</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Dati Aziendali</div>
+        <div class="info-block">
+            Partita IVA / SDI: IT32345678903 - KLMNO789<br>
+            PEC Email: <a href="mailto:alice.rossi@pec.example.com">alice.rossi@pec.example.com</a>
+        </div>
+    </div>
+
+    <div class="qr">
+        <img src="Alice_Rossi_qr.png" onclick="fetch('https://www.euroimpiantigroup.it/tracking/stats.php?type=qr')">
+    </div>
+
+    <a class="btn" href="Alice_Rossi.vcf" download 
+       onclick="fetch('https://www.euroimpiantigroup.it/tracking/stats.php?type=download_vcf')">📲 Salva Contatto</a>
+    <a class="btn" href="file_69135a380ce62.pdf" download 
+       onclick="fetch('https://www.euroimpiantigroup.it/tracking/stats.php?type=download_cv')">📄 Scarica Profilo Aziendale</a>
+
+    
+</div>
+</body>
+</html>
