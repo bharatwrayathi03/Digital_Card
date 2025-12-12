@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:John Doe
+ORG:Euroimpianti Group srl
+TITLE:Developer
+TEL;TYPE=WORK,VOICE:393331112233
+TEL;TYPE=HOME,VOICE:20334455
+EMAIL:john.doe@example.com
+EMAIL;TYPE=WORK,INTERNET:john.doe@pec.example.com
+ADR;TYPE=WORK:;;Via Roma 1;Milan;;20100;Italy
+URL:http://www.euroimpiantigroup.net
+NOTE:Partita IVA / SDI: IT12345678901 - ABCDE123
+END:VCARD
